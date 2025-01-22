@@ -136,43 +136,25 @@ mcpServers:
 # Definition of custom endpoints
 endpoints:
   # New API Endpoint
-  - name: 'new-api'
-    apiKey: '${sk-UQIiV4zBtzVa1KeTupxRStbhNTp5UiydH9r401Qiv7lZ6WNQ}'
-    baseURL: 'https://vivacoco.us.kg/v1'
+  # New API Endpoint
+  - name: "new-api"
+    apiKey: "sk-UQIiV4zBtzVa1KeTupxRStbhNTp5UiydH9r401Qiv7lZ6WNQ"
+    baseURL: "https://vivacoco.us.kg/v1"
     models:
-      default: 
-        - 'qwen-plus-latest'
-        - 'gpt-4o-mini'
-        - 'claude-3.5-sonnet'
-        - 'qvq-72b-preview'
-        - 'qwen-vl-max-latest'
-        - 'Qwen/Qwen2.5-7B-Instruct'
-        - 'gemini-1.5-flash'
-        - 'gemini-1.5-pro'
-        - 'o1-mini'
+      default: [
+        "qwen-plus-latest",
+        "gpt-4o-mini",
+        "claude-3.5-sonnet",
+        "qvq-72b-preview",
+        "qwen-vl-max-latest",
+        "Qwen/Qwen2.5-7B-Instruct",
+        "gemini-1.5-flash",
+        "gemini-1.5-pro",
+        "o1-mini"
+      ]
       fetch: true
     titleConvo: true
-    titleModel: 'gpt-4o-mini'
-    modelDisplayLabel: 'new'
+    titleModel: "gpt-4o-mini"
+    modelDisplayLabel: "new"
     summarize: true
-    summaryModel: 'gemini-1.5-pro'
-# fileConfig:
-#   endpoints:
-#     assistants:
-#       fileLimit: 5
-#       fileSizeLimit: 10  # Maximum size for an individual file in MB
-#       totalSizeLimit: 50  # Maximum total size for all files in a single request in MB
-#       supportedMimeTypes:
-#         - "image/.*"
-#         - "application/pdf"
-#     openAI:
-#       disabled: true  # Disables file uploading to the OpenAI endpoint
-#     default:
-#       totalSizeLimit: 20
-#     YourCustomEndpointName:
-#       fileLimit: 2
-#       fileSizeLimit: 5
-#   serverFileSizeLimit: 100  # Global server file size limit in MB
-#   avatarSizeLimit: 2  # Limit for user avatar image size in MB
-# See the Custom Configuration Guide for more information on Assistants Config:
-# https://www.librechat.ai/docs/configuration/librechat_yaml/object_structure/assistants_endpoint
+    summaryModel: "gemini-1.5-pro"

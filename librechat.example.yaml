@@ -176,8 +176,8 @@ endpoints:
       titleConvo: true
       titleModel: 'gpt-4o-mini'
       modelDisplayLabel: 'new'
-     summarize: true
-     Summary Model: Specify the model to use if summarization is enabled.
+      summarize: true
+      Summary Model: Specify the model to use if summarization is enabled.
       summaryModel: "gemini-1.5-pro" 
     # Mistral AI Example
     #- name: 'Mistral' # Unique name for the endpoint
